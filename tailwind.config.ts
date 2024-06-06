@@ -1,4 +1,12 @@
 import type { Config } from "tailwindcss";
+const defaultTheme = require("tailwindcss/defaultTheme");
+ 
+const colors = require("tailwindcss/colors");
+const {
+  default: flattenColorPalette,
+} = require("tailwindcss/lib/util/flattenColorPalette");
+ 
+
 
 const config: Config = {
   content: [
@@ -8,13 +16,44 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+
+      colors: {
+        dark: {
+          
+          1: '#0C0E23',
+          2: '#04071D',
+          3:'#000319'
+        },
+        purple: {
+          1:'#E4ECFF',
+          2:'#C2A8E8'
+        },
+        orange: {
+
+        },
       },
+      backgroundImage: {
+        "nav-focus":
+          "linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.00) 100%)",
+      }
+      ,
+      fontFamily: {
+        sans: ['var(--font-sans)']
+      }
     },
   },
-  plugins: [],
+  plugins: [addVariablesForColors],
 };
 export default config;
+
+
+function addVariablesForColors({ addBase, theme }: any) {
+  let allColors = flattenColorPalette(theme("colors"));
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
+ 
+  addBase({
+    ":root": newVars,
+  });
+}
