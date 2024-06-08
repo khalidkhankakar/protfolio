@@ -15,7 +15,7 @@ const HeroSection = () => {
         <p className="my-2 max-w-[95%] text-center text-[15px] font-light tracking-wide text-purple-1 md:text-[19px]">
           What’s up! I’m Khalid Kakar, a Next.js Developer in Pakistan{" "}
         </p>
-        <div className="mt-3 flex max-w-[95%] flex-col items-center justify-center space-y-4 md:flex-row md:space-x-4 md:space-y-0">
+        <div className="mt-3 flex max-w-[95%] flex-col items-center justify-center space-y-4 md:flex-row  md:space-x-4 md:space-y-0">
           <Button href="#blog" label="See my blog" />
           <Button href="#projects" label="See my work" />
         </div>

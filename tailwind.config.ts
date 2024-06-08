@@ -18,6 +18,9 @@ const config: Config = {
     extend: {
 
       colors: {
+        pink:{
+          1:"#DA1BEB",
+        },
         dark: {
           
           1: '#0C0E23',
@@ -28,9 +31,15 @@ const config: Config = {
           1:'#E4ECFF',
           2:'#C2A8E8'
         },
+        green:{
+          1:'#12FC37'
+        },
         orange: {
 
         },
+        cyan:{
+          1:'#00FCCE'
+        }
       },
       backgroundImage: {
         "nav-focus":
