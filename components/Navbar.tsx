@@ -28,7 +28,7 @@ const Navbar = () => {
         </div>
 
         <div
-          className={`flex overflow-hidden transition-all delay-100 duration-1000 ease-in ${isOpen ? "max-h-[1000px]" : "max-h-0"} flex-col items-center space-y-3`}
+          className={`flex overflow-hidden  ${isOpen ? "max-h-[1000px]" : "max-h-0"} flex-col items-center space-y-3`}
         >
           <Link href={"#about"}>About</Link>
           <Link href={"#contact"}>Contact</Link>

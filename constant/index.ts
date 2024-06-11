@@ -77,3 +77,25 @@ export const devTechs = [
     img: "/git.png",
   },
 ];
+
+export const projectCardsArr = [
+  {
+    projectName: "AI podcast generator",
+    projectExplain:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt officiis distinctio dignissimos similique maiores illo doloremque non, perspiciatis hic id adipisci praesentium. Tempora incidunt repudiandae autem modi ipsa vel iure!",
+    projectImg: "/nextjs.png",
+    projectLink: "/",
+    projectCodeLink: "/",
+    projectTechs: ["/convex.svg", "/nextauth.png", "/git.png", "/html.png"],
+  },
+  {
+    projectName: "AI photo generator",
+    projectExplain:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt officiis distinctio dignissimos similique maiores illo doloremque non, perspiciatis hic id adipisci praesentium. Tempora incidunt repudiandae autem modi ipsa vel iure!",
+    projectImg: "/git.png",
+    projectLink: "/",
+    projectCodeLink: "/",
+    projectTechs: ["/cloudinary.png", "/nextauth.png", "/git.png", "/html.png"],
+  },
+
+];

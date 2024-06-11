@@ -2,6 +2,7 @@ import About from "@/components/About";
 import Blog from "@/components/Blog";
 import DevStack from "@/components/DevStack";
 import HeroSection from "@/components/HeroSection";
+import Project from "@/components/Project";
 import Work from "@/components/Work";
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
       <Work />
       <Blog />
       <DevStack />
+      <Project />
     </main>
   );
 };
