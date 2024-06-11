@@ -1,6 +1,6 @@
 import React from "react";
 import { blogCards, } from "@/constant";
-import BlogCard from "./BlogCard";
+import BlogCard from "./cards/BlogCard";
 import Button from "./Button";
 
 const Blog = () => {

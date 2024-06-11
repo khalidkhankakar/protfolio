@@ -35,7 +35,7 @@ const config: Config = {
           1:'#12FC37'
         },
         orange: {
-
+          1:'#F4AC24'
         },
         cyan:{
           1:'#00FCCE'

@@ -1,6 +1,7 @@
-import React from 'react'
-import Card from './Card'
+
+
 import { experinceSection } from '@/constant'
+import Card from './cards/Card'
 
 const Work = () => {
   return (

@@ -1,4 +1,4 @@
-import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
+import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 import Image from "next/image";
 
 const Card = ({ title, desc, img }:{title:string,desc:string,img:string}) => {
