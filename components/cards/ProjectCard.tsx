@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+import { GoArrowUpRight } from "react-icons/go";
 
 const ProjectCard = ({
   projectName,
@@ -35,15 +37,15 @@ const ProjectCard = ({
         <p className="text-[10px] font-light tracking-wider text-purple-1 md:text-[12px] md:tracking-wide">
           {projectExplain}
         </p>
-        <div className="flex items-center justify-between my-2">
+        <div className="mt-3 flex items-center justify-between">
           {/* used techs */}
-          <div className='flex items-center space-x-2 '>  
+          <div className="flex items-center space-x-1 md:space-x-2">
             {/* map techs */}
             {projectTechs.map((projectTechImg) => (
               <Image
                 key={projectTechImg}
                 src={projectTechImg}
-                className="h-6 w-6 object-contain"
+                className="h-6 w-6  object-contain"
                 width={28}
                 height={28}
                 alt={"img"}
@@ -51,9 +53,23 @@ const ProjectCard = ({
             ))}
           </div>
 
-<div>
-  
-</div>
+          <div className="flex items-center justify-center space-x-1 md:space-x-2">
+            <Link
+              href={projectCodeLink}
+              className="flex items-center justify-center text-[10px] md:text-sm font-light text-white hover:text-purple-1"
+            >
+              view code
+              <GoArrowUpRight className="text-white" />
+            </Link>
+
+            <Link
+              href={projectLink}
+              className="flex items-center justify-center text-[10px] md:text-sm font-light text-white hover:text-purple-1"
+            >
+              check site
+              <GoArrowUpRight className="text-white" />
+            </Link>
+          </div>
           {/* site link */}
         </div>
       </div>

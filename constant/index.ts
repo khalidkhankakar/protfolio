@@ -1,3 +1,6 @@
+
+
+
 export const experinceSection = [
   {
     title: "Frontend Developer",
@@ -99,3 +102,27 @@ export const projectCardsArr = [
   },
 
 ];
+
+
+export const socialContacts =[
+  {
+    name:'Linkedin',
+    link:'/',
+    img:'/icons/linkedin.svg'
+  },
+  {
+    name:'X',
+    link:'/',
+    img:'/icons/twitter.svg'
+  },
+  {
+    name:'Github',
+    link:'/',
+    img:'/icons/github.svg'
+  },
+  {
+    name:'Whatsapp',
+    link:'/',
+    img:'/icons/whatsapp.svg'
+  }
+]
